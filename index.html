@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"  defer></script> <!--charger le fichier .js-->
+    <script src="https://kit.fontawesome.com/1f87bc87fd.js" crossorigin="anonymous"></script> <!--pour les icones fontawsome-->
+    <title>Nvidia-Menu burger</title>
+</head>
+<body>
+    <header>
+        <!-- The overlay -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <div class="entete">
+            
+                <div class="topnav">
+                    <a href="#home" class="active"> <img src="images/ico-nvidia.jpg" alt="Icone NVIDIA"></a>
+                    <!-- <a href="#home" class="active"> Logo</a> -->
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="#">PRODUITS </a>
+                            <a href="#">GAMME RTX </a>
+                            <a href="#">SUPPORT & PILOTES </a>
+                            <a href="#">CONTACT </a>
+                        </div>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><!--ne rien faire ne pas rediriger vers une autre page -->
+                        <i class="fa fa-bars"></i> 
+                    </a>
+                </div>
+            
+
+            <div class="img-info">
+                <figure class="geforce">
+                    <img src="images/GeForce.jpg" alt="Icone NVIDIA GeForce">
+                </figure>
+                <div class="barre-info">
+                    <div class="info">
+                        <p>
+                            Plus d'informations sur la gamme GeoForce RTX
+                        </p>
+                    </div>
+                    
+                    <div class="decouvrir">
+                        <button type="button" id="btn-decouvrir">Découvrir </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <div class="container">
+        <article class="article">
+            <div class="titre">
+        
+                <figure class="ico">
+                    <img src="images/ico-nvidia.jpg" alt="icone NVIDIA">
+                </figure>
+            
+                <h4>LA PUISSANCE, TOUT SIMPLEMENT.</h4>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sequi aspernatur qui quis nam! Ex, quae libero iure debitis, voluptates dolor excepturi animi, eos cupiditate nulla velit molestiae eveniet voluptatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde cumque esse quae porro tempore distinctio fuga eius totam, consequatur aut tempora in sint temporibus nihil eligendi quibusdam. Possimus, modi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eaque rerum sequi, quo modi expedita consequatur excepturi dolorem sapiente natus. Ipsam dicta veritatis animi quos unde quaerat cumque laudantium quo.<br><br>
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit minima debitis consectetur ab laborum ex nemo obcaecati quisquam iure magni vero necessitatibus nihil qui aspernatur, alias rem repellendus? Assumenda, tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minima vero error nam inventore nesciunt eum eius ipsa quos repudiandae fuga libero deserunt iusto aliquam quas, consequuntur velit, deleniti perspiciatis.<br><br>
+            </p>
+            
+        </article>
+
+        <aside>
+            <figure class="ico-apropos">
+                <center>
+                <figcaption> <b>A PROPOS</b></figcaption>
+
+                <img src="images/ico-nvidia-vert.jpg" alt="icone NVIDIA" >
+            
+                </center>                  
+            </figure>
+            <article class="apropos">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur earum illo natus, debitis repellendus quae voluptatibus soluta id, fugit suscipit. Molestias unde commodi nisi, ipsum nobis sequi id omnis.
+                </p>
+            </article>
+            <div class="ico-reseaux"> 
+                <ul>   
+                    <a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                    <a href="https://twitter.com/login"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    <a href="https://www.snapchat.com"><i class="fa-brands fa-snapchat fa-2xl"></i></a>      
+                    <a href="https://fr.linkedin.com"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a> 
+                </ul>
+            </div>                
+        </aside> 
+        <div class="trait">
+            <center><div id="triangle"></center>
+        </div>
+        
+
+    </div>
+
+</main>
+
+
+    <footer>
+        <div class="foot">
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <!--<label for="nom">Quel est votre nom ?</label>-->
+                <div class="champs">
+                    <div class="entrees">
+                        <div id="nom">
+                            <input type="text" id="nom" name="Nom" placeholder="Nom" required> 
+                        </div>
+                        <div id="email">
+                            <input type="text" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <!--<div id="bouton">
+                            <input type="submit" id="bouton" value="S'inscrire" >
+                        </div>  -->
+                    </div>
+                
+                    <div class="appuyer">
+                        <input type="submit" id="bouton" value="S'inscrire" >
+                    </div>
+                </div>
+            </div>
+            <div class="galerie">
+                <h4>GALERIE</h4>
+                <div class="images">
+                        <figure>
+                            <a href="https://www.nvidia.com/fr-fr/"><img src="images/ico-nvidia-vert.jpg" alt="Icone NVIDIA"></a>
+                            <a href="https://www.nvidia.com/fr-fr/"><img src="images/RTX-2060.jpg" alt="NVIDIA"></a>
+                            <a href="https://www.nvidia.com/fr-fr/"><img src="images/RTX1.jpg" alt="NVIDIA"></a>
+                            <a href="https://www.nvidia.com/fr-fr/"><img src="images/RTX-3080.webp" alt="NVIDIA"></a>
+                        </figure>
+
+                </div>
+
+            </div>
+            <div class="partenaires">
+                <h4>PARTENAIRES</h4>
+
+                <div class="images-part">
+                    <figure>
+                        <a href="https://www.intel.fr/content/www/fr/fr/homepage.html"><img src="images/ico-intel.jpg" alt="Icone intel"></a>
+                        <a href="https://www.asus.com/fr"><img src="images/ico-asus.jpg" alt="Icone asus"></a>
+                        <a href="https://www.ea.com/fr-fr"><img src="images/ico-ea.png" alt="Icone EA"></a>
+                    </figure>
+
+                </div>
+
+            </div>
+        </div>    
+    </footer>
+
+</body>
+</html>

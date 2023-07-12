@@ -1,0 +1,600 @@
+/*****************General****************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*width: 90%;*/
+
+}
+
+/**************BODY**************/
+
+body{
+    
+}
+/************Header*****************/
+
+/************entete**************/
+/*entete=haut-entete +image geforce+ barre decouvrir*/
+.entete {
+    width: 90%;
+    
+    margin:0 auto;
+    background-color: green;
+     /*height: 300px; */
+    overflow: hidden;  
+  }
+
+/************haut-entete********/
+.topnav a img{
+    top: 0;
+    left: 0;
+    width: 6%;
+    
+
+}
+
+
+/****************************************
+****************************************/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0,0.6);
+    position: relative;
+    color: white;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    /*display:display-box; */
+  
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color: white;
+  
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #dddddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(109, 184, 24) ; ;
+    color: white;
+  }
+
+/**************************************
+***************************************/
+
+
+/***************************************
+*************************************/  
+
+nav>ul{
+    height: 100%;
+    /*list-style-type:none;*/
+   display: flex;
+    flex-wrap: nowrap; /*sur une seule ligne*/
+    /*align-items: flex-end;
+    align-content: stretch;
+    justify-content: space-between;
+    justify-content: flex-end;
+    */
+    
+    /*display:block;*//*navigateur sous forme de liste*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav>ul>li{
+    height: 100%;
+    list-style-type:none;
+    display: flex;
+    align-items: flex-end; /*texte aligné en bas*/
+    justify-content: space-around;
+   
+    /*display:block;*//*navigateur sous forme de liste*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}   
+
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+nav>ul>li{
+        height: 100%;
+        list-style-type:none;
+        display: flex;
+        /*lign-items: flex-end; /*texte aligné en bas*/
+        justify-content: center;
+       
+        /*display:block;*//*navigateur sous forme de liste*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        rotate: -90deg;    
+
+    }
+}
+a {
+    color:black;
+    text-decoration:none;
+}
+/*************img-info***********/
+/**image geforce+barre d'info barre**/
+.img-info{
+    width: 100%;
+    position: relative;
+}
+
+.geforce>img {
+    width: 100% ;
+    
+} 
+/************figure entete********/
+
+
+
+/***************barre d'info*********/
+/**barre-info=info+button**/
+.barre-info{
+    width: 100%;
+    background-color: rgb(216, 13, 13);
+    opacity: 50%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    position : absolute;
+    left: 0;
+    bottom: 4px;
+}
+
+.info{
+    /*background-color:rgb(111, 0, 255);*/
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+button{
+    /*width: 20%;*/
+    background-color: rgb(7, 128, 23);
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+
+
+
+/**************MAIN*************/
+
+/*************principal**************/
+/**principal contient container et aside**/
+.principal{
+    background-color: rgb(223, 16, 95);
+
+}
+
+/**************container ************/
+/****container= article+asside****/
+.container {
+    width: 90%;
+    /*background-color: rgb(4, 8, 233);*/
+    display: flex; 
+    /*align-items: flex-start;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    padding: 1em;
+    margin:0 auto;
+}   
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .container {
+        width: 90%;
+        background-color: white;
+        display: flex; 
+        /*align-items: flex-start;*/
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        padding: 1em;
+        margin:0 auto;
+        justify-content: center;
+
+    } 
+}
+
+
+/**************titre*****************/
+/** titre= ico+h4 **/
+.titre{
+
+    background-color: rgb(109, 184, 24);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+/*************ico*****************/
+
+.ico>img{
+    width: 20%;
+}
+/************titre h1***********/
+h4{
+    color: black;
+    /*background-color: white;*/
+    text-align: left;
+    
+}
+/***********article*********/
+article{
+    width: 60%;
+    
+    background-color: white;
+    /*text-align : justify;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*display: flex; 
+    align-items: center;*/
+    /*background-color: rgb(139, 195, 241); 
+    padding: 1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+*/
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    article{
+        width: 100%;
+        
+        background-color: white;
+        text-align : justify;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*display: flex; 
+        align-items: center;*/
+        /*background-color: rgb(139, 195, 241); 
+        padding: 1em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    */
+    }
+
+
+}
+
+
+/********************aside*************/
+/**aside = ico-apropos+caption+article apropos++++  **/
+aside{
+    background-color: rgb(109, 184, 24) ; 
+    width: 38%;
+    color: white;
+}
+@media screen and (min-width:350px) and (max-width: 600px) {
+    aside{
+        background-color: rgb(109, 184, 24) ; 
+        width: 80%;
+        color: white;
+    }
+
+}
+
+
+.ico-apropos{
+    padding: 1em;
+
+}
+
+/************ico-apropos***************/
+
+.ico-apropos>img{
+    padding: 3em;
+    width: 30%;
+    
+
+}
+.ico-apropos>figcaption{
+    text-align: center;
+    padding: 30em;
+
+}
+/***********apropos***************/
+/*article*/
+.apropos{
+    width: 100%;
+    padding: 5%;
+    color: white;
+    background-color: rgb(109, 184, 24) ; 
+
+}
+/**************les icones des resaux***********/
+
+.ico-reseaux>ul {
+    padding: 1em;
+    /*border: 1px solid white;*/
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.ico-reseaux>ul>a {
+    /*padding: 1em;*/
+    /*border: 1px solid white;*/
+    /*background-color: rgb(255, 0, 212);*/
+    color: white;
+   
+
+    
+}
+/***************ligne horizontale****************/
+.trait{
+    background-color: rgb(109, 184, 24);
+    height: 5px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#triangle {
+    width  : 0;
+    height : 0;
+    border-left  : 10px solid transparent;
+    border-right : 10px solid transparent;
+    border-top   : 20px solid  rgb(109, 184, 24);
+    /*margin-left: 30em; */
+    /*position: absolute;*/
+    /*align-items: center;*/
+    float: center;
+}
+
+/**************FOOTER***********/
+footer{
+    width: 90%;
+    margin:0 auto;
+
+    /*background-color: rgb(0, 255, 98);*/
+}
+.foot{
+    width: 100%;
+    margin:0 auto;
+
+    /*background-color: rgb(119, 0, 255);*/
+    color: white;
+    /*float:left; */
+
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .foot{
+        /*/width: 100%;*/
+        margin:0 auto;
+
+        /*background-color: rgb(119, 0, 255);*/
+        color: white;
+        /*float:left; */
+
+        display: flex; 
+        flex-wrap: wrap-reverse;
+
+    }
+}
+/****************newsletter**************/
+.newsletter{
+    width: 35%;
+    /*background-color: rgb(255, 251, 0);*/
+    color: black;
+    border: 1px solid white;
+    text-align: left;
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .newsletter{
+        width: 100%;
+        /*background-color: rgb(255, 251, 0);*/
+        color: rgb(0, 0, 0);
+        border: 1px solid white;
+        text-align: center;
+
+        
+    }
+}
+/****titre****/
+/**************champs***************/
+
+/**champs=entree+bouton**/
+.champs{
+    /*background-color: rgb(43, 198, 226);*/
+    display: flex;
+    flex-wrap: nowrap;
+    /*align-items: flex-end;*/
+    /*justify-content: space-between;*/
+
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .champs{
+        /*background-color: rgb(43, 198, 226);*/
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /*align-items: flex-end;*/
+        justify-content: center;
+        flex-grow: 1;
+    
+    }
+}
+/************entrees****************/
+/**entree=nom+email**/
+.entrees{
+    /*background-color: brown;*/
+    width: 50%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .entrees{
+        /*background-color: rgb(233, 229, 12);*/
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: -10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
+/**********la barre nom************/
+#nom{
+    height: 30px;
+    width: 130px;
+    margin-bottom: 8px;
+}
+/***********la barre email**********/
+#email{
+    height: 30px;
+    width: 130px;
+}
+
+/***************appuyer**************/
+.appuyer{
+    width: 30%;
+    /*background-color: blue;*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: end;
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .appuyer{
+        width: auto;
+        /*background-color: blue;*/
+        display: flex;
+        align-items: end;
+    }
+}
+/******le bouton s'enregistrer*****/
+#bouton{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color:  rgb(109, 184, 24);
+    margin-bottom: 15%;
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    #bouton{
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color:  rgb(109, 184, 24);     
+        margin-top: -30px;
+
+    }
+}
+/****************galerie**************/
+
+.galerie{
+    width: 35%;
+    border: 1px solid white; 
+
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    .galerie{
+        width: 65%;
+        /*background-color: rgb(182, 50, 164);*/
+        border: 1px solid white; 
+        flex-grow: 1;
+    }
+}
+.images>figure{
+    margin-top: 5%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+/*************images*****************/
+.images>figure>a>img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60px;
+    height: 60px;
+    background-color:  rgb(109, 184, 24);
+
+}
+
+/****************partenaires**************/
+
+.partenaires{
+    width: 35%;
+    float: right;
+    /*background-color: rgb(245, 169, 7);*/
+    border: 1px solid white;
+    flex-grow: 2;
+}
+/*affichage pour ecrans de tablettes */
+@media screen and (min-width:350px) and (max-width: 600px) {
+    width: 50%;
+    float: right;
+    /*background-color: rgb(245, 169, 7);*/
+    border: 1px solid white;
+    flex-grow: 2;
+}
+
+.images-part>figure{
+    margin-top: 5%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*************images*****************/
+.images-part>figure>a>img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70px;
+    /*height: 70px;*/
+}
+
+
